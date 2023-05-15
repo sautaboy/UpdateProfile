@@ -6,17 +6,19 @@ import { UserDataSignUp } from '../App'
 import { NavLink } from 'react-router-dom'
 
 
+
+
 export default function About() {
     const { userName, facebookId, instaId, imageAddress, userInformation } = useContext(UserDataSignUp)
+    let a = "Url.createObjectURl"
     return (
         <div className='aboutPage' >
             <div className="userProfile">
                 <h2>Personal Information</h2>
 
                 <div className="userImage">
-                    <img className='imageSize' src={imageAddress} alt="" />
+                    <img className='imageSize' id='image' src={imageAddress} alt="" />
                 </div>
-
 
                 <div className="userName">
                     <h2>People Call Me : {userName}</h2>
